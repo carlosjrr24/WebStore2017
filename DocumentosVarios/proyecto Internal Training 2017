@@ -1,0 +1,62 @@
+
+
+Proyecto Internal Training 2017
+
+consideraciones del vasco
+
+SETUP Solution
+1) GIT setup de repo
+     workflow de git, commit a dev y local branches
+2) Setup de las bases de datos (crear base de datos e incremental asociados) (puede haber incrementales luego para carga de data en las tablas)
+3) Usar repository pattern - Model, Repository, Managers + DTOs
+DEBE FUNCIONAR EL PROYECTO
+
+FRONT END
+1) Armar una estructura para luego pedir el maquetado en Bootstrap
+     - Login (User)
+     - ABM Usuario (User )
+     - Listar productos (User)
+     - ABM Productos (Admin)
+
+ABM
+1) ABM usuarios, productos en Netframework 4.5
+2) Utilización de Datatables para mostrar contenido, ejemplo tabla de productos, usuarios
+    Armando una api para consultar por AJAX
+    Para la api usar postman
+3) NLOG framework - Generar logs -> Login, abm user, abm products
+
+Deseable:
+Deploy del proyecto en IIS Local
+--------------------------------------------------------
+
+Alcances
+
+- La Aplicación debe poder realizar la publicación de articulos para la venta.
+- Debe mantener un registro de usuarios para login y el CRUD completo de articulos.
+- La aplicación debe ser 100% entregable, es decir, desde la creación de los script de base de datos, hasta la completa instalación deben estar en repositorios.
+
+Limitaciones
+
+- La aplicación se limita al manejo de sus usuarios, roles de usuario y CRUD de articulos. Cualquier plus puede ser realizado una vez completados los alcances mencionados anteriormente.
+
+Ambiente de trabajo y Tecnologías
+
+Backend
+
+- Windows 10
+- Microsoft SQL Server
+- .Net
+- Entity Framework 6
+- C#
+- MVC
+- Usar repository pattern - Model, Repository, Managers + DTOs
+- API
+
+FrontEnd
+
+- Html
+- CSS
+- Jquery
+- Ajax
+- uso de Datatables
+- NLOG framework
