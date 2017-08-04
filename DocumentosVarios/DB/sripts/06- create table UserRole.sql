@@ -1,0 +1,28 @@
+USE [WebStore]
+GO
+
+/****** Object:  Table [dbo].[UserRole]    Script Date: 8/4/2017 12:59:01 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UserRole](
+	[Id_User] [int] NOT NULL,
+	[Id_Role] [int] NOT NULL,
+ CONSTRAINT [PK_UserRole] PRIMARY KEY CLUSTERED 
+(
+	[Id_User] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[UserRole]  WITH CHECK ADD  CONSTRAINT [FK_UserRole_Role] FOREIGN KEY([Id_Role])
+REFERENCES [dbo].[Role] ([Id_Role])
+GO
+
+ALTER TABLE [dbo].[UserRole] CHECK CONSTRAINT [FK_UserRole_Role]
+GO
+
+
